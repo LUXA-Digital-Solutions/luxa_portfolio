@@ -148,6 +148,51 @@ html {
     background: linear-gradient(135deg, var(--luxa-1), var(--luxa-3));
   }
   
+  /* Technology gradient colors */
+  .from-blue-500.to-blue-600 {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+  }
+  
+  .from-gray-800.to-gray-900 {
+    background: linear-gradient(135deg, #1f2937, #111827);
+  }
+  
+  .from-blue-600.to-blue-700 {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  }
+  
+  .from-cyan-500.to-blue-500 {
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  }
+  
+  .from-green-500.to-green-600 {
+    background: linear-gradient(135deg, #10b981, #059669);
+  }
+  
+  .from-blue-500.to-yellow-500 {
+    background: linear-gradient(135deg, #3b82f6, #eab308);
+  }
+  
+  .from-blue-600.to-blue-700 {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  }
+  
+  .from-blue-400.to-blue-500 {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  }
+  
+  .from-orange-500.to-orange-600 {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+  }
+  
+  .from-red-500.to-red-600 {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+  }
+  
+  .from-orange-500.to-yellow-500 {
+    background: linear-gradient(135deg, #f97316, #eab308);
+  }
+  
   /* Opacity variants */
   .bg-luxa-1\/5 { background-color: rgba(167, 235, 242, 0.05); }
   .bg-luxa-1\/10 { background-color: rgba(167, 235, 242, 0.1); }

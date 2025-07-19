@@ -9,7 +9,19 @@ import {
   BarChart3, 
   Target,
   ArrowRight,
-  Code
+  Code,
+  Globe,
+  Database,
+  Zap,
+  Palette,
+  Shield,
+  ShoppingBag,
+  TrendingUp,
+  Settings,
+  Cloud,
+  Cpu,
+  Smartphone as ReactNative,
+  Smartphone as Flutter
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -60,18 +72,32 @@ const Services = () => {
   ];
 
   const technologies = [
-    { icon: Code, name: 'React', category: 'Frontend' },
-    { icon: Code, name: 'Next.js', category: 'Frontend' },
-    { icon: Code, name: 'TypeScript', category: 'Language' },
-    { icon: Code, name: 'Node.js', category: 'Backend' },
-    { icon: Code, name: 'Python', category: 'Backend' },
-    { icon: Code, name: 'React Native', category: 'Mobile' },
-    { icon: Code, name: 'Flutter', category: 'Mobile' },
-    { icon: Code, name: 'Shopify', category: 'E-commerce' },
-    { icon: Code, name: 'WooCommerce', category: 'E-commerce' },
-    { icon: Code, name: 'D3.js', category: 'Data' },
-    { icon: Code, name: 'Tailwind CSS', category: 'Styling' },
-    { icon: Code, name: 'PostgreSQL', category: 'Database' },
+    // Frontend Technologies
+    { icon: Globe, name: 'React', category: 'Frontend', color: 'from-blue-500 to-blue-600' },
+    { icon: Zap, name: 'Next.js', category: 'Frontend', color: 'from-gray-800 to-gray-900' },
+    { icon: Code, name: 'TypeScript', category: 'Language', color: 'from-blue-600 to-blue-700' },
+    { icon: Palette, name: 'Tailwind CSS', category: 'Styling', color: 'from-cyan-500 to-blue-500' },
+    
+    // Backend Technologies
+    { icon: Cpu, name: 'Node.js', category: 'Backend', color: 'from-green-500 to-green-600' },
+    { icon: Settings, name: 'Python', category: 'Backend', color: 'from-blue-500 to-yellow-500' },
+    { icon: Database, name: 'PostgreSQL', category: 'Database', color: 'from-blue-600 to-blue-700' },
+    
+    // Mobile Technologies
+    { icon: ReactNative, name: 'React Native', category: 'Mobile', color: 'from-blue-500 to-blue-600' },
+    { icon: Flutter, name: 'Flutter', category: 'Mobile', color: 'from-blue-400 to-blue-500' },
+    
+    // E-commerce Technologies
+    { icon: ShoppingBag, name: 'Shopify', category: 'E-commerce', color: 'from-green-500 to-green-600' },
+    { icon: ShoppingCart, name: 'WooCommerce', category: 'E-commerce', color: 'from-orange-500 to-orange-600' },
+    
+    // Data & Analytics
+    { icon: TrendingUp, name: 'D3.js', category: 'Data', color: 'from-orange-500 to-orange-600' },
+    { icon: BarChart3, name: 'Chart.js', category: 'Data', color: 'from-red-500 to-red-600' },
+    
+    // Cloud & DevOps
+    { icon: Cloud, name: 'AWS', category: 'Cloud', color: 'from-orange-500 to-orange-600' },
+    { icon: Shield, name: 'Firebase', category: 'Cloud', color: 'from-orange-500 to-yellow-500' },
   ];
 
   return (
@@ -157,13 +183,13 @@ const Services = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="group p-3 sm:p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100"
+                className="group p-3 sm:p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-gray-200"
               >
-                <div className="w-12 h-12 bg-luxa-gradient rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                <div className={`w-12 h-12 bg-gradient-to-r ${tech.color} rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300`}>
                   <tech.icon size={24} className="text-white" />
                 </div>
-                <h4 className="font-semibold text-gray-900 text-sm">{tech.name}</h4>
-                <p className="text-xs text-gray-500">{tech.category}</p>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">{tech.name}</h4>
+                <p className="text-xs text-gray-500 font-medium">{tech.category}</p>
               </motion.div>
             ))}
           </div>
@@ -192,7 +218,7 @@ const Services = () => {
                 Start Your Project
               </Link>
               <Link 
-                href="/#portfolio" 
+                href="/portfolio" 
                 className="border-2 border-white text-white hover:bg-white hover:text-luxa-2 font-semibold py-3 px-8 rounded-lg transition-all duration-300"
               >
                 View Our Work

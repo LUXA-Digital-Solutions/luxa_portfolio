@@ -114,7 +114,7 @@ const Hero = () => {
             </Link>
             
             <Link 
-              href="/#portfolio" 
+              href="/portfolio" 
               className="btn-secondary group flex items-center space-x-2"
             >
               <span>View Our Work</span>

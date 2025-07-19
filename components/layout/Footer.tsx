@@ -22,16 +22,16 @@ const Footer = () => {
       { name: 'Landing Pages', href: '#services' }
     ],
     company: [
-      { name: 'About Us', href: '#about' },
-      { name: 'Our Portfolio', href: '#portfolio' },
-      { name: 'Mentorship Program', href: '#about' },
-      { name: 'Contact Us', href: '#contact' }
+      { name: 'About Us', href: '/about' },
+      { name: 'Our Portfolio', href: '/portfolio' },
+      { name: 'Mentorship Program', href: '/about' },
+      { name: 'Contact Us', href: '/contact' }
     ],
     resources: [
       { name: 'Blog', href: '#blog' },
-      { name: 'Case Studies', href: '#portfolio' },
+      { name: 'Case Studies', href: '/portfolio' },
       { name: 'Developer Resources', href: '#' },
-      { name: 'Join Our Team', href: '#contact' }
+      { name: 'Join Our Team', href: '/contact' }
     ]
   };
 

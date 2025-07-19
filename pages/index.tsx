@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Header from '@/components/layout/Header';
 import Hero from '@/components/sections/Hero';
 import Services from '@/components/sections/Services';
-import Portfolio from '@/components/sections/Portfolio';
 import Footer from '@/components/layout/Footer';
 
 export default function Home() {
@@ -38,7 +37,6 @@ export default function Home() {
         <Header />
         <Hero />
         <Services />
-        <Portfolio />
         <Footer />
       </main>
     </>
