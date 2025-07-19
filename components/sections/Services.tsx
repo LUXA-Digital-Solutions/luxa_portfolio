@@ -75,7 +75,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="section-padding bg-gradient-to-br from-gray-50 to-white">
+    <section id="services" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
       <div className="container-max">
         {/* Section Header */}
         <motion.div
@@ -85,18 +85,18 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             <span className="text-gray-900">Our</span>{' '}
             <span className="text-gradient">Services</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             We specialize in building modern digital solutions that drive business growth while 
             <span className="text-luxa-2 font-semibold"> mentoring the next generation of developers</span>.
           </p>
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -104,7 +104,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 card-hover border border-gray-100"
+              className="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 card-hover border border-gray-100"
             >
               {/* Service Icon */}
               <div className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
@@ -112,7 +112,7 @@ const Services = () => {
               </div>
 
               {/* Service Content */}
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">{service.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
 
               {/* Features List */}
@@ -127,7 +127,7 @@ const Services = () => {
 
               {/* CTA */}
               <Link 
-                href="#contact" 
+                href="/contact" 
                 className="inline-flex items-center text-luxa-2 font-semibold hover:text-luxa-3 transition-colors duration-200 group/link"
               >
                 Learn More
@@ -149,7 +149,7 @@ const Services = () => {
             Technologies We <span className="text-gradient">Master</span>
           </h3>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
             {technologies.map((tech, index) => (
               <motion.div
                 key={tech.name}
@@ -157,7 +157,7 @@ const Services = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="group p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100"
+                className="group p-3 sm:p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100"
               >
                 <div className="w-12 h-12 bg-luxa-gradient rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                   <tech.icon size={24} className="text-white" />
@@ -186,13 +186,13 @@ const Services = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
-                href="#contact" 
+                href="/contact" 
                 className="bg-white text-luxa-2 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
               >
                 Start Your Project
               </Link>
               <Link 
-                href="#portfolio" 
+                href="/#portfolio" 
                 className="border-2 border-white text-white hover:bg-white hover:text-luxa-2 font-semibold py-3 px-8 rounded-lg transition-all duration-300"
               >
                 View Our Work

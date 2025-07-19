@@ -29,7 +29,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 lg:pt-20">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-luxa-1/5 via-luxa-2/5 to-luxa-5/10"></div>
       
@@ -82,17 +82,17 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
               <span className="text-gray-900">Building Digital</span>
-              <br />
+              <br className="hidden sm:block" />
               <span className="text-gradient">Products &</span>
-              <br />
+              <br className="hidden sm:block" />
               <span className="text-gray-900">Empowering</span>
-              <br />
+              <br className="hidden sm:block" />
               <span className="text-gradient">Developers</span>
             </h1>
             
-            <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
               LUXA Digital Solutions is a fast-growing tech agency focused on helping businesses build user-focused digital products while{' '}
               <span className="text-luxa-2 font-semibold">mentoring the next generation of developers</span>.
             </p>
@@ -106,7 +106,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
           >
             <Link 
-              href="#contact" 
+              href="/contact" 
               className="btn-primary group flex items-center space-x-2"
             >
               <span>Start Your Project</span>
@@ -114,7 +114,7 @@ const Hero = () => {
             </Link>
             
             <Link 
-              href="#portfolio" 
+              href="/#portfolio" 
               className="btn-secondary group flex items-center space-x-2"
             >
               <span>View Our Work</span>
@@ -127,7 +127,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto px-4"
           >
             {features.map((feature, index) => (
               <motion.div
@@ -153,7 +153,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="mt-16 pt-8 border-t border-gray-200/50"
           >
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-4xl mx-auto px-4">
               <div className="text-center">
                 <div className="text-3xl lg:text-4xl font-bold text-luxa-2 mb-2">50+</div>
                 <div className="text-gray-600">Projects Delivered</div>

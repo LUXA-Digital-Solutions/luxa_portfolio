@@ -19,12 +19,11 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'About', href: '#about' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const socialLinks = [
@@ -82,7 +81,7 @@ const Header = () => {
                 <social.icon size={20} />
               </a>
             ))}
-            <Link href="#contact" className="btn-primary">
+            <Link href="/contact" className="btn-primary">
               Get Started
             </Link>
           </div>
@@ -137,7 +136,7 @@ const Header = () => {
                   ))}
                 </div>
                 <Link
-                  href="#contact"
+                  href="/contact"
                   onClick={() => setIsMenuOpen(false)}
                   className="btn-primary w-full text-center"
                 >

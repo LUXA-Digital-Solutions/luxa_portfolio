@@ -37,7 +37,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-padding bg-gradient-to-br from-gray-50 to-white">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
       <div className="container-max">
         {/* Section Header */}
         <motion.div
@@ -47,11 +47,11 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             <span className="text-gray-900">About</span>{' '}
             <span className="text-gradient">LUXA</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             We&apos;re not just a web development agency. We&apos;re a community of passionate developers 
             dedicated to building amazing digital products while{' '}
             <span className="text-luxa-2 font-semibold">mentoring the next generation</span>.
@@ -59,7 +59,7 @@ const About = () => {
         </motion.div>
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-12 sm:mb-16">
           {/* Left Column - Story */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -67,7 +67,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
               Our Story
             </h3>
             <div className="space-y-6 text-gray-600 leading-relaxed">
@@ -90,7 +90,7 @@ const About = () => {
             {/* CTA */}
             <div className="mt-8">
               <Link 
-                href="#contact" 
+                href="/contact" 
                 className="btn-primary inline-flex items-center group"
               >
                 <span>Join Our Mission</span>
@@ -107,7 +107,7 @@ const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="bg-luxa-gradient rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
+            <div className="bg-luxa-gradient rounded-3xl p-6 sm:p-8 lg:p-12 text-white relative overflow-hidden">
               {/* Background Pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-10 left-10 w-20 h-20 border-2 border-white rounded-full"></div>
@@ -117,7 +117,7 @@ const About = () => {
               </div>
 
               <div className="relative z-10">
-                <h3 className="text-2xl lg:text-3xl font-bold mb-6">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6">
                   Our Unique Approach
                 </h3>
                 <div className="space-y-4">
@@ -165,7 +165,7 @@ const About = () => {
           <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">
             Our <span className="text-gradient">Values</span>
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {values.map((value, index) => (
               <motion.div
                 key={value.title}
@@ -196,7 +196,7 @@ const About = () => {
           <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">
             Our <span className="text-gradient">Impact</span>
           </h3>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -234,13 +234,13 @@ const About = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
-                href="#contact" 
+                href="/contact" 
                 className="bg-white text-luxa-2 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
               >
                 Start Your Project
               </Link>
               <Link 
-                href="#contact" 
+                href="/contact" 
                 className="border-2 border-white text-white hover:bg-white hover:text-luxa-2 font-semibold py-3 px-8 rounded-lg transition-all duration-300"
               >
                 Join Our Team

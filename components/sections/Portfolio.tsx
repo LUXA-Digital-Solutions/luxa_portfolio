@@ -89,7 +89,7 @@ const Portfolio = () => {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="portfolio" className="section-padding bg-white">
+    <section id="portfolio" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="container-max">
         {/* Section Header */}
         <motion.div
@@ -99,11 +99,11 @@ const Portfolio = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             <span className="text-gray-900">Our</span>{' '}
             <span className="text-gradient">Portfolio</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Explore our latest projects that showcase our expertise in building modern digital solutions 
             while <span className="text-luxa-2 font-semibold">mentoring the next generation of developers</span>.
           </p>
@@ -115,7 +115,7 @@ const Portfolio = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 px-4"
         >
           {filters.map((filter) => (
             <button
@@ -142,8 +142,8 @@ const Portfolio = () => {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 lg:p-12 border border-gray-100">
-              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-6 sm:p-8 lg:p-12 border border-gray-100">
+                              <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
                 {/* Project Image */}
                 <div className="relative group">
                   <div className="aspect-video bg-luxa-gradient rounded-2xl overflow-hidden shadow-2xl">
@@ -178,15 +178,15 @@ const Portfolio = () => {
                       Featured Project
                     </span>
                   </div>
-                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                  <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
                     {project.description}
                   </p>
                   
                   {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-8">
+                  <div className="flex flex-wrap gap-2 mb-6 sm:mb-8">
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
@@ -221,7 +221,7 @@ const Portfolio = () => {
         ))}
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredProjects.filter(p => !p.featured).map((project, index) => (
             <motion.div
               key={project.id}
@@ -313,7 +313,7 @@ const Portfolio = () => {
               Let&apos;s build something amazing together while contributing to the next generation of developers.
             </p>
             <Link 
-              href="#contact" 
+              href="/contact" 
               className="bg-white text-luxa-2 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center"
             >
               <span>Get Started</span>
